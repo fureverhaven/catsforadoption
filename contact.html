@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>/* Basic Reset */
+footer {
+            text-align: center; /* Center the icons */
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for the icons */
+        .footer-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+        }
+
+        .footer-icons li {
+            margin: 0 15px; /* Space between icons */
+        }
+
+        .footer-icons img {
+            width: 90px; /* Change the size of the icons */
+            height: 40px; /* Adjust the height to maintain aspect ratio */
+            transition: transform 0.3s; /* Add a hover effect */
+        }
+
+        .footer-icons img:hover {
+            transform: scale(1.2); /* Increase icon size on hover */
+        }
+ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between; /* Aligns the icon and text */
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    a i {
+      margin-right: 9px; /* Space between icon and text */
+    }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background-color:lighy gray ;
+    transition: left 0.3s ease;
+    padding-top: 50px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Toggle Button (Hamburger) */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle-btn:hover {
+    background-color: transparent;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    font-family: perpetua;
+}
+
+h1 {
+    color: #333;
+}
+p {
+color: black;
+}
+
+/* Sidebar Toggle */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Show the sidebar when the checkbox is checked */
+.menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+.menu-toggle:checked + .sidebar + .content {
+    margin-left: 250px;
+}
+.background-image {
+  background-image: url('ORANGE.jpg'); 
+    /* Replace with your image path */
+  background-position: top center;  /* Position the image at the top */
+  background-size: 100% 100%;  /* Make the image cover the top half of the page */
+  background-repeat: no-repeat;  /* Prevent repeating the image */
+  height: 100vh;
+    
+/* Take up 50% of the viewport height */
+}
+
+
+/* Style the text content that appears below the image */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: white;  /* Optional background for the content */
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: black;
+}
+.centered-text
+{
+text-align:center;
+white-space:normal;
+padding-left:60px;
+padding-right:60px;
+}
+
+
+</style>
+<body>
+
+    <!-- Sidebar Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+       
+             <nav>
+  <ul>
+    <li><a href="catsproject.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="aboutus.html"><i class="fas fa-user"></i> About Us</a></li>
+    <li><a href="Contact..html"><i class="fas fa-phone"></i> Contact Us</a></li>
+    <li><a href="T&C.HTML"><i class="fas fa-file-signature"></i> T&C</a></li>
+  </ul>
+</nav>
+        </div>
+  
+        <div class="background-image">
+            
+        
+        
+    </div>
+
+    <!-- Toggle Button (Hamburger) -->
+    <label for="menu-toggle" class="toggle-btn">&#9776;</label>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+    </div>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+
+<u><h3  style="text-align:center";> GET IN TOUCH </h3></u>
+<h5  style="text-align:center";>WE LOVE HEARING FROM YOU!</h5>
+<p  style="text-align:center";> Our team are happy to answer any questions you may have about how we can help you. </p>
+<H5 style="text-align:center";>&#9200; Our Hours:</H5>
+<p style="text-align:center";>Monday-Saturday from 9:00am to 6:30pm IST</p>
+<H5 style="text-align:center";>&#128222 Our Phone:</H5>
+<p style="text-align:center";> 678-978-5890 </p>
+<p style="text-align:center";>&#128233 Please email us at fureverhaven@gmail.com</p>
+
+<p style="text-align:center";>Monthly Donors Membership : Please email us at members@fureverhaven.org</p>
+<h5 style="text-align:center";>&#128204 Our Location:</h5>
+<p style="text-align:center";>Shelter Address</p>
+
+<p style="text-align:center";>414 Jenkins Rd</p>
+
+<p style="text-align:center";>Tyrone, GA 30290</p>
+
+<p style="text-align:center";>(Between the Fire Station and Sandy Creek High School)</p>
+<h5 style="text-align:center";>&#128237 Mailing Address:</h5>
+<p style="text-align:center";>PO Box 847</p>
+<p style="text-align:center";>Tyrone,<br>GA 30290</p>
+<style>
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #f9f9f9;
+    }
+    label {
+        font-weight: bold;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+.centered-text
+{
+text-align:center;
+white-space:normal;
+padding-left:60px;
+padding-right:60px;
+}
+
+</style> 
+    <h1 style="text-align:center";>Contact Us</h1>
+    <form style="text-align:center";action="/submit-form" method="post">
+        <!-- Text Input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Phone Input -->
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <!-- Dropdown/Select -->
+        <label for="inquiry">Type of Inquiry:</label><br>
+        <select id="inquiry" name="inquiry">
+            <option value="general">General</option>
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Preferred Contact Method:</label><br>
+        <input type="checkbox" id="emailContact" name="contact_method" value="email">
+        <label for="emailContact">Email</label><br>
+        <input type="checkbox" id="phoneContact" name="contact_method" value="phone">
+        <label for="phoneContact">Phone</label><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+        <div class="right">
+</style>
+  <BODY>
+
+ <hr>
+    <p style="text-align:center;font-size:10px"><b>FUR-EVER HAVEN<i class="fas fa-paw"></i></b></p><br>
+        <ul class="footer-icons">
+        <li><a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        
+    </ul>
+    
+    <footer>
+        <p style="text-align:center";>&copy;2025.All rights reserved</p>
+            </footer>
+
+    </body>
+</html>
+
+</head>
+</body>
+</html>

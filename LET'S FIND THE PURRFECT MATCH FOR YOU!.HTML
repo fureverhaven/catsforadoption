@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Scroll with Info Table</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<style>/* Basic Reset */
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between; /* Aligns the icon and text */
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    a i {
+      margin-right: 9px; /* Space between icon and text */
+    }
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background-color:lighy gray ;
+    transition: left 0.3s ease;
+    padding-top: 50px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Toggle Button (Hamburger) */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+    padding: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle-btn:hover {
+    background-color: transparent;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    font-family: perpetua;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Sidebar Toggle */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Show the sidebar when the checkbox is checked */
+.menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+.menu-toggle:checked + .sidebar + .content {
+    margin-left: 250px;
+}
+
+/* Style the text content that appears below the image */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: white;  /* Optional background for the content */
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+
+
+</style>
+
+<body>
+    
+
+    <!-- Sidebar Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <nav>
+        <ul>
+            <li><a href="CATSPROJECT.HTML"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="ABOUTUS.HTML"><i class="fas fa-user"></i> About Us</a></li>
+    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+    <li><a href="T&C.HTML"><i class="fas fa-file-signature"></i> T&C</a></li>
+        </div>
+        </nav>
+    </ul>
+        <div class="background-image">
+            
+        
+        
+    </div>
+
+    <!-- Toggle Button (Hamburger) -->
+    <label for="menu-toggle" class="toggle-btn">&#9776;</label>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+    </div>
+    
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    background-color: #ffffff;
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: float;
+      gap: 20px;
+      padding: 20px;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+       /* Semi-transparent background */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 10px;
+transition: left 2.0s ease out;
+
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #222222;
+      border-radius: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .item {
+      flex: 0 0 auto;
+      width: 200px;
+      background: white; /* Fully opaque container */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    .item img {
+      width: 100%;
+      display: block;
+    }
+
+    .info {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .info table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .info table th,
+    .info table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .info table th {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+<div class="scroll-container">
+  <!-- Item 1 -->
+  <div class="item">
+    <img src="PERSIAN.jpg" alt="chanel">
+    <div class="info">
+      <h4>Elegance purr-sonified</h4>
+      <table>
+<tr>
+          <th>NAME</th>
+          <td>Chanel</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Persian</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>2yrs</td>
+        </tr>
+<tr>
+          <th>NAME</th>
+          <td>Female</td>
+        </tr>
+
+       
+      </table>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="item">
+    <img src="ragdoll.jpg" alt="Daphne">
+    <div class="info">
+      <h4>Sapphire eyes and silky fur</h4>
+      <table>
+<tr>
+          <th>NAME</th>
+          <td>Daphne</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Ragdoll</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>3yrs 2mths</td>
+        </tr>
+<tr>
+          <th>NAME</th>
+          <td>Female</td>
+        </tr>
+
+       
+      </table>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="item">
+    <img src="Abyssinian.jpg" alt="lottie">
+    <div class="info">
+      <h4>Active and Colourful</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Lottie</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Abyssinian</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>3yrs</td>
+        </tr>
+<tr>
+          <th>GENDER</th>
+          <td>Female</td>
+        </tr>
+
+        
+      </table>
+    </div>
+  </div>
+<div class="item">
+    <img src="companion.jpg" alt="Clover">
+    <div class="info">
+      <h4> An "everyman cat" first in our hearts</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Clover</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Companion Cat</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>3yrs</td>
+        </tr>
+<tr>
+          <th>GENDER</th>
+          <td>MALE</td>
+        </tr>
+
+        
+      </table>
+    </div>
+  </div>
+<div class="item">
+    <img src="siamesecat.jpg" alt="Lily">
+    <div class="info">
+      <h4>Extremely smart and trainable</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Lily</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Siamese</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>3yrs</td>
+        </tr>
+<tr>
+          <th>GENDER</th>
+          <td>Male</td>
+        </tr>
+
+        
+      </table>
+    </div>
+  </div>
+<div class="item">
+    <img src="British.jpg" alt="Chester">
+    <div class="info">
+      <h4>Short hair, pairing sweetness with strength</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Chester</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>British Short Hair</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>4yrs</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>Male</td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+<div class="item">
+    <img src="Sphynx.jpg" alt="Buzz">
+    <div class="info">
+      <h4>Sometimes, beauty is bare</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Buzz</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Sphynx</td>
+        </tr>
+        <tr>
+          <th>AGE</th>
+          <td>2yrs</td>
+        </tr>
+<tr>
+          <th>GENDER</th>
+          <td>Male</td>
+        </tr>
+
+        
+      </table>
+    </div>
+  </div>
+<div class="item">
+    <img src="Scottish.jpg" alt="Muffin">
+    <div class="info">
+      <h4>Simply Ear-resistable</h4>
+      <table>
+ <tr>
+          <th>NAME</th>
+          <td>Muffin</td>
+        </tr>
+
+        <tr>
+          <th>BREED</th>
+          <td>Scottish</td>
+        </tr>
+        <tr>
+          <th>GENDER</th>
+          <td>Female</td>
+        </tr>
+        
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

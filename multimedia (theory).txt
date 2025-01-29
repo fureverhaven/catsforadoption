@@ -1,0 +1,31 @@
+Elements of multimedia
+
+TEXT FORMATS:
+*PDF: Portable Document Format
+*DOCX: Document Extended (microsoft word document)
+*TXT : Text File
+
+AUDIO FORMATS:
+*MP3: MPEG1 Audio Layer 3
+*WAV: Waveform Audio File Format
+*AAC: Advanced Audio Coding
+
+VIDEO FORMATS:
+*MP4: MPEG-4 Part 14
+*AVI: Audio Video Interleave
+*MOV: Apple QuickTime Movie
+*GIF: Graphics Interchange Format
+FLASH: 
+
+COLOR MODELS:
+1.CMYK: Cyan, magenta, yellow, key/black
+2.RGB: Red, Green and Blue
+3. HSV(Hue, Saturation, Value)
+
+USES OF COLOR:
+1.Hue
+2.Saturation
+3.Brightness
+
+*Color palettes
+*Dithering

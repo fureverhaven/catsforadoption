@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<style>/* Basic Reset */
+footer {
+            text-align: center; /* Center the icons */
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for the icons */
+        .footer-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+        }
+
+        .footer-icons li {
+            margin: 0 15px; /* Space between icons */
+        }
+
+        .footer-icons img {
+            width: 90px; /* Change the size of the icons */
+            height: 40px; /* Adjust the height to maintain aspect ratio */
+            transition: transform 0.3s; /* Add a hover effect */
+        }
+
+        .footer-icons img:hover {
+            transform: scale(1.2); /* Increase icon size on hover */
+        }
+ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between; /* Aligns the icon and text */
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    a i {
+      margin-right: 9px; /* Space between icon and text */
+    }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background-color:lighy gray ;
+    transition: left 0.3s ease;
+    padding-top: 50px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Toggle Button (Hamburger) */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle-btn:hover {
+    background-color: transparent;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    font-family: perpetua;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Sidebar Toggle */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Show the sidebar when the checkbox is checked */
+.menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+.menu-toggle:checked + .sidebar + .content {
+    margin-left: 250px;
+}
+.background-image {
+  background-image: url('orange.jpg'); 
+    /* Replace with your image path */
+  background-position: top center;  /* Position the image at the top */
+  background-size: 100% 100%;  /* Make the image cover the top half of the page */
+  background-repeat: no-repeat;  /* Prevent repeating the image */
+  height: 100vh;
+    
+/* Take up 50% of the viewport height */
+}
+
+
+/* Style the text content that appears below the image */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: white;  /* Optional background for the content */
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: black;
+}
+.centered-text
+{
+text-align:center;
+white-space:normal;
+padding-left:60px;
+padding-right:60px;
+}
+
+</style>
+<body>
+
+    <!-- Sidebar Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <nav>
+        <ul>
+            <li><a href="catsproject.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="Aboutus.html"><i class="fas fa-user"></i> About Us</a></li>
+    <li><a href="Contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+    <li><a href="T&C.HTML"><i class="fas fa-file-signature"></i> T&C</a></li>
+        </div>
+    </ul>
+    </nav>  
+        <div class="background-image">
+            
+        
+        
+    </div>
+
+    <!-- Toggle Button (Hamburger) -->
+    <label for="menu-toggle" class="toggle-btn">&#9776;</label>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+    </div>
+    
+<BODY>
+<div class="centered-text">
+<h2 style="font-family:perpetua;font-size:20px"><u> OUR STORY </u></h2>
+<p style="text-align: justify;font-family:perpetua;font-size:18px;">FUR-EVER HAVEN was formed in october, 2013 by two friends who got together to help community cats and kittens after being outraged by a newspaper report about five kittens being burned alive in a box. In 2013, more than 8000 cats were culled that year in a bid to control the stray population. That equated to an average of 30 cats killed every single day.FUR-EVER HAVEN set about to reduce this number with the aim of eliminating it entirely. Our tireless campaigning over the years against the inhumane culling of cats has resulted in a record low of less than 1000 cats put down since 2019. Over the years, FUR-EVER HAVEN has grown from strength to strength and evolved in it's vision and mission. Our work has expanded to include community mediation and frontline intervention , community cat population management, education on responsible practices, outreach, and advocacy.</p>   
+<h2 style="font-family:perpetua;font-size:20px"> <u>OBJECTIVES</u> </H2>
+<p style="text-align: justify;font-family:perpetua;font-size:18px;"> FUR-EVER HAVEN has been established with the aim to provide one stop solution for Ailurophile.Being an ailurophile, we understand that "A house is not home with paw prints" and here we help you find that friendly companion for you. But the journey of an ailurophile does not stop with being a cat parent; it brings much more responsibility with it. Taking care of your cat and keeping them healthy is as important as loving them. This means that whatsoever you and your cat or you are into, we too are into it. Be it taking your cat on a walk or filing their nails or when it's time for your cats to meet it's vet or when your cat is looking for his/her date. We are committed in making cat-care safe, affordable and easy for every cat parent so that they can enjoy the unconditional love of their cat. "Love of cat is unconditional....Let's feel the awesomeness!!!"
+<p style="text-align: justify;font-family:perpetua;font-size:18px;">Whether you need in-home pet grooming, pet boarding, pet training, pet insurance, pet relocation, or vet on call, FUR-EVER HAVEN connects pet parents with pet care heroes who will treat their pet like family. But it's not just about pet love. FUE-EVER HAVEN is also committed to making pet care safe, easy, and affordable so that everyone can experience the unconditional love of a pet. Whatever you and your furr babies are into, we are into it too. And we have got your back anytime and anywhere.
+</div>
+  <hr>
+    <p style="text-align:center;font-size:10px"><b>FUR-EVER HAVEN<i class="fas fa-paw"></i></b></p><br>
+        <ul class="footer-icons">
+        <li><a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        
+    </ul>
+    
+    <footer>
+        <p style="text-align:center";>&copy;2025.All rights reserved</p>
+            </footer>
+</body>
+</html>

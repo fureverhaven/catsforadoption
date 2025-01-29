@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<style>/* Basic Reset */
+footer {
+            text-align: center; /* Center the icons */
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for the icons */
+        .footer-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+        }
+
+        .footer-icons li {
+            margin: 0 15px; /* Space between icons */
+        }
+
+        .footer-icons img {
+            width: 90px; /* Change the size of the icons */
+            height: 40px; /* Adjust the height to maintain aspect ratio */
+            transition: transform 0.3s; /* Add a hover effect */
+        }
+
+        .footer-icons img:hover {
+            transform: scale(1.2); /* Increase icon size on hover */
+        }
+
+
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between; /* Aligns the icon and text */
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    a i {
+      margin-right: 9px; /* Space between icon and text */
+    }
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background-color: transparent ;
+    transition: left 0.3s ease;
+    padding-top: 50px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Toggle Button (Hamburger) */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle-btn:hover {
+    background-color: transparent;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    font-family: perpetua;
+}
+
+h1 {
+    color: #000000;
+}
+
+/* Sidebar Toggle */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Show the sidebar when the checkbox is checked */
+.menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+.menu-toggle:checked + .sidebar + .content {
+    margin-left: 250px;
+}
+.background-image {
+  background-image: url('home3.jpg'); 
+    /* Replace with your image path */
+  background-position: top center;  /* Position the image at the top */
+  background-size: 100% 100%;  /* Make the image cover the top half of the page */
+  background-repeat: no-repeat;  /* Prevent repeating the image */
+  height: 110vh;
+    
+/* Take up 50% of the viewport height */
+}
+
+
+/* Style the text content that appears below the image */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: white;  /* Optional background for the content */
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: black;
+}
+.centered-text
+{
+text-align:center;
+white-space:normal;
+padding-left:60px;
+padding-right:60px;
+}
+
+
+
+</style>
+
+<body>
+    
+
+    <!-- Sidebar Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <nav>
+        <ul>
+            <li><a href="CATSPROJECT.HTML"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="ABOUTUS.HTML"><i class="fas fa-user"></i> About Us</a></li>
+    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+    <li><a href="T&C.HTML"><i class="fas fa-file-signature"></i> T&C</a></li>
+        </div>
+        </nav>
+    </ul>
+        <div class="background-image">
+            
+        
+        
+    </div>
+
+    <!-- Toggle Button (Hamburger) -->
+    <label for="menu-toggle" class="toggle-btn">&#9776;</label>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+    </div>
+    
+<BODY>
+    
+<div class="centered-text">
+      <h1 style="font-family:perpetua;font-size:19px"><center><u>CATS FOR ADOPTION</u></center></h1>
+      <p style="text-align:center;font-family:perpetua;font-size:18px"> Looking for pets to adopt?<br>You have come to the right place!<BR>We provide healthy kittens and cats for adoption<BR>Each and every cats at our shelter has his/her own story and background,<br>but what they all have in common is that they are looking for a purrfect home.</p>
+<div class="centered-text"><h1 style="font-family:perpetua;font-size:18px"> <center><u>YOUR GUIDE TO ADOPTING A CAT</u></center></h1>
+<p style="text-align:center;font-family:perpetua;font-size:18px"> Rescuing a cat or kitten can be extremely rewarding experience but it is important to consider the options to make sure you can provide the right home for your new pet.</p>
+<h1 style="font-family:perpetua;font-size:18px"> <center><U>BENEFITS OF ADOPTING A CAT</u></center></h1>
+<p style="text-align:left;font-family:perpetua;font-size:18px"> Adopting a cat can be an extremely gratifying journey for a number of reasons,both practical and emotional, of which here are just a few:</p>
+<li style="text-align:left;">If you go to a rescue centre, staff will know each cat well and help you find the right pet for you.</li>
+<li style="text-align:left;">Shelter cats are usually treated for parasites,examined by a vet and are very often sterilized and vaccinated before you take them home.You will usually be asked for an affordable financial contribution when you take your cat home.</li>
+<h1 style="font-family:perpetua;font-size:18px"> <center><u>CHALLENGES OF ADOPTING A CAT</u></center></h1>
+<p style="text-align:left;font-family:perpetua;font-size:18px"> Having awareness of the challenges of adopting a cat from the start can help you to make your decision, and support you in the early stages of owning your new cat:</p>
+<li style="text-align:left;">If you choose to adopt a kitten, it will initially be a lot more depedent than a adult cat and cannot be left alone for too long.</li>
+<li style="text-align:left;">If you adopt a kitten you will need to take the time to house train it.</li>
+<h1 style="font-family:perpetua;font-size:18px"> <center><U>BRINGING YOUR ADOPTED CAT HOME</u></center></h1>
+<p style="text-align:left;font-family:perpetua;font-size:18px">When you first bring your adopted cat home, try doing the following to allow it to slowly cat used to its new family and environment:
+<li style="text-align:left;">Start by keeping it in one room, ideally the room in which the litter tray is going to stay,and allow them to explore in a calm and quiet environment.</li>
+<li style="text-align:left;">Make sure your house is safe by putting away any toxic substances, putting a fire gaurd infront of any fireplaces and making sure bins and toilets have closed lids.</li>
+<li style="text-align:left;">Find a reputable veterinary practice and arrange for your new cat to be brought in for a check-up as soon as possible, before introducing to any existing pets, to avoid the possibility of spreading any infections.</li>
+</div>
+<div class="topnav">
+<br>
+<b><a style="font-family:perpetua;font-size:20px;justify-content:center;" href="LET'S FIND THE PURRFECT MATCH FOR YOU!.HTML">"LET'S FIND THE PURRFECT MATCH FOR YOU!"</a></b>  
+    <hr>
+    <p style="text-align:center;font-size:10px"><b> FUR-EVER HAVEN<i class="fas fa-paw"></i></b></p>
+        <ul class="footer-icons">
+        <li><a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/tiagustd7" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/fureverhaven_" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        
+    </ul>
+    
+    <footer>
+        <p style="text-align:center";>&copy;2025.All rights reserved</p>
+            </footer>
+</div>
+    
+
+
+</body>
+</html>
